@@ -87,47 +87,29 @@
 }
 
 
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"); */
 
-* {
-  box-sizing: border-box;
-}
 
-/* .counter-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 30px 50px;
-}
-
-.counter {
-  font-size: 60px;
-  margin-top: 10px;
-} */
-
-/* @media (max-width: 580px) {
-  body {
-    flex-direction: column;
-  }
-} */
-
-/* .carousel-item img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    /* height: auto; */
+ /* Carousal */
     
-    /* .autoplay img{
-        width: auto;
-    } */
-
-   
-.items{
-  /* width:90%; */
+.facility-items{
   margin:0px auto;
-  margin-top: 100px;
 }
+
+.facility-item{
+    background-color: #fff;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.facility-item-text{
+    padding:15px 10px;
+}
+
+.facility-item-text h5{
+    font-size:19px;
+     font-weight: 600;
+}
+
 .slick-slide{
   margin:20px;
 }
@@ -136,19 +118,13 @@
   border: 0px solid #fff;
 }
 
-.branches{
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+}
+
+.facilities{
+    margin-top: 100px;
+    background-color: #f4f4f5;
     width: 100%;
-    background-color: #039BE5 !important;
 }
 
-@media screen and (max-width: 576px){
-    .items{
-        width: 80% !important;
-    }
-}
-
-@media screen and (max-width: 1024px){
-    .items{
-        width: 90%;
-    }
-}

@@ -3,3 +3,15 @@
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 576px){
+    .facility-items{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .facility-items{
+        width: 90%;
+    }
+}
