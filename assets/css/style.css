@@ -866,6 +866,13 @@ section {
 } */
 
 
+/* Footer */
+
+footer table tr td{
+  background-color: #23242a !important;
+   color: white !important;
+}
+
 @media screen and (max-width: 991px){
   .social-links,
   .footer-contact{
