@@ -992,11 +992,17 @@ footer table tr td{
   margin-top: 40px;
 }
 
-.contact .info .email:hover i,
+/* .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #7851A9;
   color: #fff;
+} */
+
+.contact .info .email p a:hover,
+.contact .info .phone p a:hover{
+  color: #7851A9 !important;
+  font-weight: bold;
 }
 
 .contact .php-email-form {
