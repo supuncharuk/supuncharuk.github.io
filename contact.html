@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - NexEd</title>
+  <title>Contact - NexEd University</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link  href="assets/css/slick-theme.css" rel="stylesheet">
+    <link  href="assets/css/slick.css" rel="stylesheet">
 
 </head>
 
@@ -115,6 +117,66 @@
       </div>
     </section>
 
+    <section class="testimonials text-center">
+   
+      <div class="container testimonial-container" style="width: 80%;">
+        <h2 style="padding-bottom: 20px;">Testimonials</h2>
+        <div class="testimonial-items" style="width: auto;">
+          <div class="testimonial-item">
+            <div class="testimonial-item-image">
+              <img class="rounded-circle" src="/assets/img/testimonials/testimonials-1.jpg">
+            </div>
+            
+            <div class="testimonial-item-text">
+              <h5>Alexandra M.</h5>
+              <p class="fst-italic">"My time at NexEd was transformative. The hands-on approach to learning and the personalized mentorship I received shaped not only my academic journey but also prepared me for the challenges of my career. The strong sense of community fostered an environment of collaboration, making my education at [Your Educational Platform Name] an invaluable experience.</p>
+            </div>
+          </div>
+  
+          <div class="testimonial-item">
+            <div class="testimonial-item-image">
+              <img class="rounded-circle" src="/assets/img/testimonials/testimonials-2.jpg">
+            </div>
+            <div class="testimonial-item-text">
+              <h5>Samuel L.</h5>
+              <p class="fst-italic">"Choosing NexEd was the best decision I made. The innovative curriculum and engaging classes have ignited my passion for learning. The professors genuinely care about my success, providing guidance that goes beyond textbooks. I feel well-prepared for the future, thanks to the dynamic education I'm receiving here."</p>
+            </div>
+          </div>
+  
+          <div class="testimonial-item">
+            <div class="testimonial-item-image">
+              <img class="rounded-circle" src="/assets/img/testimonials/testimonials-3.jpg">
+            </div>
+            <div class="testimonial-item-text">
+              <h5>Dr. Jessica P.</h5>
+              <p class="fst-italic">"As a faculty member at NexEd, I am proud to be part of an institution that prioritizes both academic excellence and the personal growth of students. The commitment to fostering a vibrant learning community is evident in every classroom. It's inspiring to see students evolve into confident, capable professionals ready to make a positive impact."</p>
+            </div>
+          </div>
+  
+          <div class="testimonial-item">
+            <div class="testimonial-item-image">
+              <img class="rounded-circle" src="/assets/img/testimonials/testimonials-4.jpg">
+            </div>
+            <div class="testimonial-item-text">
+              <h5>Elijah W. </h5>
+              <p class="fst-italic">"My education at NexEd laid the foundation for my entrepreneurial journey. The emphasis on practical skills and critical thinking has been instrumental in my success. The supportive network and resources available to me as an alumnus continue to play a crucial role in my ongoing ventures."</p>
+            </div>
+          </div>
+  
+          <div class="testimonial-item">
+            <div class="testimonial-item-image">
+              <img class="rounded-circle" src="/assets/img/testimonials/testimonials-5.jpg">
+            </div>
+            <div class="testimonial-item-text">
+              <h5>Olivia R.</h5>
+              <p class="fst-italic">"Choosing NexEd for my child was the right choice. The focus on individualized mentorship and a vibrant learning community has not only nurtured their academic growth but also instilled a sense of confidence and curiosity. I'm impressed by the holistic education provided by [Your Educational Platform Name]. It's truly shaping the leaders of tomorrow."</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="text-center text-lg-start" style="background-color: #23242a;">
@@ -123,13 +185,7 @@
         <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase mb-4" style="color: white;">About INSTITUTE</h5>
 
-          <p style="color: white;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum voluptate voluptates, quo unde nulla mollitia hic deserunt quae et quibusdam illum iste numquam sit sed facilis dolore laudantium? Temporibus, nihil!
-          </p>
-
-          <p style="color: white;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, quam at aut assumenda delectus sapiente ducimus illum dicta numquam
-          </p>
+          <p class="text-white">NexEd University is a premier institution committed to academic excellence and innovation. With a focus on cutting-edge programs and a dedication to nurturing future leaders, we empower students to thrive in a dynamic and evolving world.</p>
 
           <div class="mt-4 social-links">
             <a href="#"><i class='bx bxl-facebook-circle' style="font-size: 30px; color: #7851A9; padding-right: 15px;"></i></a>
@@ -193,5 +249,55 @@
   <script src="assets/js/slick.min.js"></script>
 
 </body>
+
+<script>
+
+  $(document).ready(function() {
+    $('.counter').each(function () {
+      $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+      }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+        });
+      }); 
+  });
+
+  $(document).ready(function(){ 
+    $('.testimonial-items').slick({
+      infinite: true,
+      // lazyLoad: 'ondemand',
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              
+            }
+          },
+          {
+            breakpoint:768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+      ]
+          
+    });                
+  });
+          
+</script>
 
 </html>
