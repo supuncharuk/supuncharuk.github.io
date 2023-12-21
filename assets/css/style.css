@@ -517,22 +517,28 @@ section {
 /*-----------------------------------------------------------------
 # Count
 ---------------------------------------------------------------*/
+.counter-section{
+  margin-bottom: 10px;
+}
+
 .counter-section i{
   display:block;
   margin:0 0 10px
 }
 
 .counter-section span.counter{
-  font-size:40px;
-  color:#000;
+  font-size:48px;
+  color:#7851A9;
   line-height:60px;
   display:block;
   font-family: "Oswald",sans-serif;
+  font-weight: 700;
   letter-spacing: 2px
 }
 
 .counter-title{
-  font-size:12px;
+  font-size:15px;
+  font-weight: 600;
   letter-spacing:2px;
   text-transform: uppercase
 }
@@ -597,7 +603,19 @@ section {
   background: #fff;
   padding: 40px 30px;
   width: 100%;
-  border: 1px solid #eef0ef;
+  /* border: 1px solid #eef0ef; */
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+.why-us .icon-boxes .icon-box:hover{
+  background-color: #ebe5f6;
+}
+
+.why-us .icon-boxes .icon-box:hover h4,
+.why-us .icon-boxes .icon-box:hover p,
+.why-us .icon-boxes .icon-box:hover i{
+  color: black;
 }
 
 .why-us .icon-boxes .icon-box i {
@@ -607,6 +625,7 @@ section {
   margin-bottom: 30px;
   background: #ecf9f0;
   border-radius: 50px;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 .why-us .icon-boxes .icon-box h4 {
@@ -624,9 +643,14 @@ section {
 /*--------------------------------------------------------------
 # Courses
 --------------------------------------------------------------*/
+/* .popular-courses{
+  background: #f8f9fa;
+} */
+
 .courses .course-item {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #eef0ef;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 .courses .course-content {
@@ -811,6 +835,11 @@ section {
 
 
 /* Carousal */
+.testimonials h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
     
 .testimonial-items{
   margin:0px auto;
@@ -941,6 +970,12 @@ footer table tr td{
     /* margin-top: 100px; */
     /* background-color: #f4f4f5; */
     width: 1
+}
+
+.facilities h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 
