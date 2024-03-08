@@ -4783,5 +4783,5 @@ a.credit {
 .contact-number:hover,
 .contact-email:hover{
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bold !important;
 }
