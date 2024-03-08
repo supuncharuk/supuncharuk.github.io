@@ -4779,3 +4779,8 @@ a.credit {
 .footer-title a:hover{
   text-decoration: none !important;
 }
+
+.contact-number:hover,
+.contact-email:hover{
+  text-decoration: none;
+}
